@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Base</title>
+
+    <style>
+        fieldset {
+		background-color: white;
+		opacity: .5;
+		}
+    </style>
+
+</head>
+<fieldset>
+	<h4><u>Follow this link below to:</u></h4>
+	<h4><a href="{% url 'home' %}"> <p>Return to homepage</p></a></h4>
+    <h4><a href="{% url 'recipe' %}"> <p><b>Get <i>free</i> Recipe</b></p></a></h4>
+	<h4><a href="{% url 'form' %}"> <p>place an order</p></a></h4>
+</fieldset>
+
+{% block content %}
+{% endblock content %}
+</html>
