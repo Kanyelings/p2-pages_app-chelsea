@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Tapenade</title>
+    <style>
+        fieldset {
+              position: center;
+              size: 50%;
+        }
+    </style>
+</head>
+<body>
+<a href="{% url 'recipe' %}"> <h1>Back</h1> </a>
+<fieldset>
+    <img src="{% static 'images/Tapenade.png' %}" alt="Tapenade">
+</fieldset>
+</body>
+</html>
